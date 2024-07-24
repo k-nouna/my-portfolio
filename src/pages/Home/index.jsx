@@ -1,10 +1,22 @@
+import AboutMe from '../../components/AboutMe';
+import Intro from '../../components/Intro';
+import RecentWorks from '../../components/RecentWorks';
+import Services from '../../components/Services';
 import './Home.css';
 
 function Home() {
   return (
-    <div className="Home">
-      <p>Home page</p>  
-    </div>
+    <main className="Home">
+      <Intro/>
+      <AboutMe/>
+      <Services/>
+      <RecentWorks/>
+      <footer className='n-footer'>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Discord</a>
+      </footer>
+    </main>
   );
 }
 
