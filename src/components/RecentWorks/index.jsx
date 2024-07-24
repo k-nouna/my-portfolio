@@ -1,10 +1,16 @@
 import React from 'react'
-import Work from '../Work'
+import Card from '../Card'
 
-function RecentWorks() {
+function RecentWorks({works}) {
+
   return (
     <section className='n-recent-work-c'>
-      <Work/>
+      {works.map((work,index)=>(
+        <Card key ={`${work.name}-${index}`}
+              topic ={work.topic}
+              picture={work.picture}
+              domain={work.domain}/>
+      ))}
     </section>
   )
 }
