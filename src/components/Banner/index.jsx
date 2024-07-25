@@ -22,10 +22,8 @@ function Banner() {
                         bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://www.cpiworld.com/wp-content/uploads/2018/10/Lightbulb-redux.jpeg')]
                     ">
         <Header/>
-       <div>
-        <h1>Hello</h1>
-        <h2>I'm Kam</h2>
-       </div>
+    
+        
     </div>
   )
 }
