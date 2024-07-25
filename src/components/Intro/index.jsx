@@ -9,7 +9,7 @@ function Intro() {
       <p>I'm a AI engineer</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam fuga suscipit nesciunt ducimus consequatur similique unde dolore numquam soluta quia iusto eos vero atque adipisci illo, delectus maxime deleniti! Ipsa?</p>
     </div>
-    <img src="../../assets/nouna.jpg" alt="Lionel Kambdetety" srcset="" />
+    <img src="../../assets/nouna.jpg" alt="Lionel Kambdetety" srcset="" className='avatar'/>
     </section>
   )
 }

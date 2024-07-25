@@ -8,7 +8,7 @@ import Works from './pages/Works';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
 
-import Header from './components/Header';
+import Banner from './components/Banner';
 import Error from './components/Error';
 
 import reportWebVitals from './reportWebVitals';
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
-      <Header />
+      <Banner />
         <Routes>
           <Route path='/' element = {<Home/>}/>
           <Route path='/my-works' element = {<Works/>}/>
