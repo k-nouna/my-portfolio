@@ -1,21 +1,26 @@
 import React from 'react'
-
+import Profile from '../../assets/nouna.jpg'
 function AboutMe() {
   return (
-    <div className='n-about-me'>
-        <h1>About Me</h1>
-        <div className='n-about-me-text'>
+    <section id='about-me' className='flex m-[10%]'>
+        <div className="abme-img flex mr-[30px]">
+            <img src={Profile} alt="Lionel Kambdetey" srcset="" />
+        </div>
+        <div className='abme-text text-left justify-start'>
+            <h1 className='text-black'>About Me</h1>
+            <h2>AI Engineer - Entrepreuner</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nisi tenetur corrupti unde, sit commodi consequatur excepturi velit ullam at id architecto dignissimos quidem quas nam facere nemo, delectus laborum.</p>
+            <div className='abme-btn-container'>
+                <button className='btn-cv'>
+                    Download CV
+                </button>
+                <button className='btn-contact'>
+                    <a href='#contact-me'>Contact Me</a>
+                </button>
+            </div>
         </div>
-        <div className='n-about-me-btn'>
-            <button className='n-btn-cv'>
-                Download CV
-            </button>
-            <button className='n-btn-contact'>
-                Contact me
-            </button>
-        </div>
-    </div>
+        
+    </section>
   )
 }
 

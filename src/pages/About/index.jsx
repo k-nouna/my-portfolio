@@ -6,7 +6,7 @@ function About() {
   return (
     <div>
       <Header/>
-      <p>About</p>
+      <p>My works</p>
     </div>
   )
 }
