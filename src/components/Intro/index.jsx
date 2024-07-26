@@ -22,7 +22,7 @@ function Intro() {
   return (
     <div className="container">
       <h1 className='font-extrabold text-white'>Hi !</h1>
-      <h2 className='text-5xl font-extrabold text-white'>I'm <span ref={el} className='text-[#f7b529ff]'></span></h2>
+      <h2 className='text-5xl font-extrabold text-white'>I'm <span ref={el}></span></h2>
     </div>
   )
 }
