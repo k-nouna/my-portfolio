@@ -5,9 +5,9 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const navItems = [
   { id: 1,text:'Home',path:'/'},
-  { id: 2,text:'My Works',path:'/my-works'},
-  { id: 3,text:'About Me',path:'/about-me'},
-  { id: 4,text:'Contact Me',path:'/contact-me'},
+  { id: 2,text:'My Works',path:'/#my-works'},
+  { id: 3,text:'About Me',path:'/#about-me'},
+  { id: 4,text:'Contact Me',path:'/#contact-me'},
 ] 
 
 function Header() {

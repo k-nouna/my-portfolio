@@ -2,11 +2,11 @@ import React from 'react'
 import Profile from '../../assets/nouna.jpg'
 function AboutMe() {
   return (
-    <section id='about-me' className='flex m-[10%]'>
-        <div className="abme-img flex mr-[30px]">
-            <img src={Profile} alt="Lionel Kambdetey" srcset="" />
+    <section id='about-me' name="about-me" className='flex m-[10%]'>
+        <div className="abme-img flex mr-[25px]">
+            <img src={Profile} alt="Lionel Kambdetey" srcset="" className='rounded-full' />
         </div>
-        <div className='abme-text text-left justify-start'>
+        <div className='abme-text flex flex-col justify-center text-left'>
             <h1 className='text-black text-5xl font-extrabold'>About Me</h1>
             <h2 className='text-2xl text-gray-500 mb-10'>AI Engineer - Entrepreuner</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nisi tenetur corrupti unde, sit commodi consequatur excepturi velit ullam at id architecto dignissimos quidem quas nam facere nemo, delectus laborum.</p>
@@ -19,7 +19,6 @@ function AboutMe() {
                 </button>
             </div>
         </div>
-        
     </section>
   )
 }
