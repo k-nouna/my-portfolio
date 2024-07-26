@@ -10,7 +10,7 @@ function Banner() {
         <div className="w-full
                         h-screen
                         max-h-[400px]
-                        p-6
+                        
                         overflow-hidden
                         block
                         z-10
@@ -19,7 +19,7 @@ function Banner() {
                         bg-no-repeat
                         bg-center
                         bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://www.cpiworld.com/wp-content/uploads/2018/10/Lightbulb-redux.jpeg')]
-                    ">
+              ">
         <Header/>
         <Intro/>
     </div>

@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const navItems = [
-  { id: 1,text:'Home'},
-  { id: 2,text:'My Works'},
-  { id: 3,text:'About Me'},
-  { id: 4,text:'Contact Me'},
+  { id: 1,text:'Home',path:'/'},
+  { id: 2,text:'My Works',path:'/my-works'},
+  { id: 3,text:'About Me',path:'/about-me'},
+  { id: 4,text:'Contact Me',path:'/contact-me'},
 ] 
 
 function Header() {
@@ -21,18 +21,19 @@ function Header() {
   };
 
   return (
-  <header className='flex justify-end items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+  <header className='flex justify-end m-[10px]'>
     {/* Desktop Navigation */}
-    <ul className='hidden md:flex'>
+    <nav className='hidden flex-1 justify-end md:flex text-2xl text-white'>
       {navItems.map(item => (
         <Link
             key={item.id}
             className='p-3 hover:bg-[#2a9df4ff] rounded-xl m-2 cursor-pointer duration-300 hover:text-white'
+            to={`${item.path}`}
           >
             {item.text}
           </Link>
         ))}
-      </ul>
+      </nav>
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className='block md:hidden'>

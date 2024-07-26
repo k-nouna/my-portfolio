@@ -1,8 +1,13 @@
 import React from 'react'
 
+import Header from '../../components/Header'
+
 function Works() {
   return (
-    <div>My works</div>
+    <div>
+      <Header/>  
+      <p>My works</p>
+    </div>
   )
 }
 

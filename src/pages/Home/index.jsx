@@ -1,5 +1,7 @@
 import AboutMe from '../../components/AboutMe';
-import Intro from '../../components/Intro';
+
+import Banner from '../../components/Banner';
+import Header from '../../components/Header';
 import RecentWorks from '../../components/RecentWorks';
 import Services from '../../components/Services';
 import './Home.css';
@@ -65,17 +67,19 @@ const data = [
 
 function Home() {
   return (
-    <main className="Home">
-      <AboutMe/>
-      <Services/>
-      <RecentWorks works = {data}/>
-
+    <div className="Home">
+      <Banner />
+      <main>
+        <AboutMe/>
+        <Services/>
+        <RecentWorks works = {data}/>
+      </main>
       <footer className='n-footer'>
         <a href="#">LinkedIn</a>
         <a href="#">Twitter</a>
         <a href="#">Discord</a>
       </footer>
-    </main>
+    </div>
   );
 }
 
