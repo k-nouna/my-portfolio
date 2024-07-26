@@ -7,8 +7,8 @@ function AboutMe() {
             <img src={Profile} alt="Lionel Kambdetey" srcset="" />
         </div>
         <div className='abme-text text-left justify-start'>
-            <h1 className='text-black'>About Me</h1>
-            <h2>AI Engineer - Entrepreuner</h2>
+            <h1 className='text-black text-5xl font-extrabold'>About Me</h1>
+            <h2 className='text-2xl text-gray-500 mb-10'>AI Engineer - Entrepreuner</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nisi tenetur corrupti unde, sit commodi consequatur excepturi velit ullam at id architecto dignissimos quidem quas nam facere nemo, delectus laborum.</p>
             <div className='abme-btn-container'>
                 <button className='btn-cv'>
