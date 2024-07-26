@@ -66,7 +66,6 @@ const data = [
 function Home() {
   return (
     <main className="Home">
-      <Intro/>
       <AboutMe/>
       <Services/>
       <RecentWorks works = {data}/>

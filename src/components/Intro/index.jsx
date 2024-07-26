@@ -1,16 +1,29 @@
 import React from 'react'
+import './Intro.css'
+
+import Typed from 'typed.js'
 
 function Intro() {
+    // Create reference to store the DOM element containing the animation
+    const el = React.useRef(null);
+
+    React.useEffect(() => {
+      const typed = new Typed(el.current, {
+        strings: ['KAMBDETEY Lionel'],
+        typeSpeed: 150,
+        loop:true
+      });
+
+      return () => {
+        // Destroy Typed instance during cleanup to stop animation
+        typed.destroy();
+      };
+    }, []);
   return (
-    <section className='n-intro'>
-        
-    <div>
-      <h1>Hello</h1>
-      <p>I'm a AI engineer</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam fuga suscipit nesciunt ducimus consequatur similique unde dolore numquam soluta quia iusto eos vero atque adipisci illo, delectus maxime deleniti! Ipsa?</p>
+    <div className="container">
+      <h1 className='font-extrabold text-white'>Hi !</h1>
+      <h2 className='text-5xl font-extrabold text-white'>I'm <span ref={el} className='text-[#f7b529ff]'></span></h2>
     </div>
-    <img src="../../assets/nouna.jpg" alt="Lionel Kambdetety" srcset="" className='avatar'/>
-    </section>
   )
 }
 

@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #fff;
+    font-size: 75px;
+}
+span{
+    color: #2a9df4ff;
+}
