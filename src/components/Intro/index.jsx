@@ -21,8 +21,8 @@ function Intro() {
     }, []);
   return (
     <div className="container">
-      <h1 className='font-extrabold text-white'>Hi !</h1>
-      <h2 className='text-5xl font-extrabold text-white'>I'm <span ref={el}></span></h2>
+      <h1 className='font-extrabold text-5xl text-white'>Hi !</h1>
+      <h2 className='text-3xl font-extrabold text-white md:text-5xl'>I'm <span ref={el}></span></h2>
     </div>
   )
 }

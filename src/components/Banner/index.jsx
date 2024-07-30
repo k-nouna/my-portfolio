@@ -8,8 +8,10 @@ import Intro  from '../Intro'
 function Banner() {
   return (
         <div className="w-full
-                        h-screen
+                        h-[250px]
+                        md:h-screen
                         max-h-[400px]
+
                         
                         overflow-hidden
                         block

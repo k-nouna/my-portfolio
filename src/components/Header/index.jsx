@@ -21,13 +21,13 @@ function Header() {
   };
 
   return (
-  <header className='flex justify-end m-[10px]'>
+  <header className='flex justify-end m-[20px]'>
     {/* Desktop Navigation */}
-    <nav className='hidden flex-1 justify-end md:flex text-2xl text-white'>
+    <nav className='hidden flex-1 justify-end md:flex text-2xl gap-2 text-white'>
       {navItems.map(item => (
         <Link
             key={item.id}
-            className='p-3 hover:bg-[#2a9df4ff] rounded-xl m-2 cursor-pointer duration-300 hover:text-white'
+            className='p-3 hover:bg-[#2a9df4ff] rounded-xl cursor-pointer duration-300 hover:text-white'
             to={`${item.path}`}
           >
             {item.text}
@@ -37,7 +37,7 @@ function Header() {
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={20} color='white'/> : <AiOutlineMenu size={20} color={'white'} />}
       </div>
 
       {/* Mobile Navigation Menu */}

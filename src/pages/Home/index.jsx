@@ -10,9 +10,9 @@ const data = [
   {
     topic: 'Application AR mobile de calcul de distance réel',
     picture: '',
-    domain: 'Augmented Reality',
+    domains: ['Augmented Reality'],
     description: 'Lorem',
-    technology : [
+    technologies : [
       {
         name:'Unity',
         picture : ''
@@ -26,9 +26,9 @@ const data = [
   {
     topic: 'Sentiment analysis',
     picture: '',
-    domain: 'Machine Learning',
+    domain: ['Machine Learning'],
     description: 'Lorem',
-    technology : [
+    technologies : [
       {
         name:'Python',
         logo : ''
@@ -46,9 +46,9 @@ const data = [
   {
     topic: 'Recommandation automatique',
     picture: '',
-    domain: 'Deep Learning',
+    domains: ['Deep Learning'],
     description: 'Lorem',
-    technology : [
+    technologies : [
       {
         name:'Python',
         logo : ''
@@ -71,8 +71,8 @@ function Home() {
       <Banner />
       <main>
         <AboutMe/>
-        <Services/>
         <RecentWorks works = {data}/>
+        <Services/>
       </main>
       <footer className='n-footer'>
         <a href="#">LinkedIn</a>
