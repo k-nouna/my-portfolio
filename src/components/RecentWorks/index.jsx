@@ -27,16 +27,9 @@ function RecentWorks({works}) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           centerPadding: "10px",
-        }
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
         }
       }
     ]
@@ -46,7 +39,7 @@ function RecentWorks({works}) {
     <section id='#my-works' name="my-works" className='flex flex-col gap-2'>
       <h1 className='text-black text-4xl font-extrabold'>My works</h1>
       
-        <div className='w-full m-[15px] slider-container'>
+        <div className='m-[15px] slider-container'>
         <Slider {...settings}>
             {works.map((work,index)=>(
               <Card key ={`${work.name}-${index}`}
