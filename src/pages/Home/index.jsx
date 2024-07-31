@@ -62,7 +62,39 @@ const data = [
         logo : ''
       },
     ]
-  }
+  },
+  {
+    topic: 'Application AR mobile de calcul de distance réel',
+    picture: '',
+    domains: ['Augmented Reality'],
+    description: 'Lorem',
+    technologies : [
+      {
+        name:'Unity',
+        picture : ''
+      },
+      {
+        name:'C#',
+        picture : ''
+      },
+    ]
+  },
+  {
+    topic: 'Application AR mobile de calcul de distance réel',
+    picture: '',
+    domains: ['Augmented Reality'],
+    description: 'Lorem',
+    technologies : [
+      {
+        name:'Unity',
+        picture : ''
+      },
+      {
+        name:'C#',
+        picture : ''
+      },
+    ]
+  },
 ]
 
 function Home() {

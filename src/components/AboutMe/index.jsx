@@ -2,8 +2,8 @@ import React from 'react'
 import Profile from '../../assets/nouna.jpg'
 function AboutMe() {
   return (
-    <section id='about-me' name="about-me" className='flex flex-col items-center gap-2 my-[20px] mx-[10px] md:m-[10%] md:flex-row'>
-        <img src={Profile} alt="Lionel Kambdetey" srcset="" className='rounded-full w-[50%] justify-center' />
+    <section id='about-me' name="about-me" className='flex flex-col items-center gap-2 md:gap-5 my-[20px] mx-[10px] md:m-[10%] md:flex-row'>
+        <img src={Profile} alt="Lionel Kambdetey" srcset="" className='rounded-full w-[50%] md:w-[40%] justify-center border-[10px] border-[#2a9df4ff]' />
         <div className='flex gap-2 flex-col items-center text-center justify-center md:text-left'>
             <h1 className='text-black text-4xl font-extrabold'>About Me</h1>
             <h2 className='text-larger md:text-2xl text-gray-500 '>AI Engineer - Entrepreuner</h2>
