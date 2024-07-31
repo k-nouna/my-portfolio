@@ -29,7 +29,7 @@ function RecentWorks({works}) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 2,
-          centerPadding: "10px",
+          centerPadding: "10%",
         }
       }
     ]
