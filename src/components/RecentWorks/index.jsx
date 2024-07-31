@@ -5,8 +5,8 @@ function RecentWorks({works}) {
 
   return (
     <section id='#my-works' name="my-works" className='flex flex-col gap-2 '>
-      <h1 className='text-black text-5xl font-extrabold'>My rescent work</h1>
-      <div className=' flex overflow-scroll m-[10px] gap-5'>
+      <h1 className='text-black text-4xl font-extrabold'>My works</h1>
+      <div className=' flex overflow-scroll m-[10px] gap-3'>
         {works.map((work,index)=>(
           <Card key ={`${work.name}-${index}`}
                 topic ={work.topic}

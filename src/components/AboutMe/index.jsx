@@ -5,7 +5,7 @@ function AboutMe() {
     <section id='about-me' name="about-me" className='flex flex-col items-center gap-2 my-[20px] mx-[10px] md:m-[10%] md:flex-row'>
         <img src={Profile} alt="Lionel Kambdetey" srcset="" className='rounded-full w-[50%] justify-center' />
         <div className='flex gap-2 flex-col items-center text-center justify-center md:text-left'>
-            <h1 className='text-black text-5xl font-extrabold'>About Me</h1>
+            <h1 className='text-black text-4xl font-extrabold'>About Me</h1>
             <h2 className='text-larger md:text-2xl text-gray-500 '>AI Engineer - Entrepreuner</h2>
             <p className='md:text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, nisi tenetur corrupti unde, sit commodi consequatur excepturi velit ullam at id architecto dignissimos quidem quas nam facere nemo, delectus laborum.</p>
             <div className='abme-btn-container flex gap-2'>
