@@ -5,9 +5,9 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const navItems = [
   { id: 1,text:'Home',path:'/'},
-  { id: 2,text:'My Works',path:'/#my-works'},
-  { id: 3,text:'About Me',path:'/#about-me'},
-  { id: 4,text:'Contact Me',path:'/#contact-me'},
+  { id: 2,text:'My Works',path:'#my-works'},
+  { id: 3,text:'About Me',path:'#about-me'},
+  { id: 4,text:'Contact Me',path:'#contact-me'},
 ] 
 
 function Header() {
@@ -55,7 +55,9 @@ function Header() {
             key={item.id}
             className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
           >
-            {item.text}
+            <Link to={item.path} onClick={handleNav}>
+              {item.text}
+            </Link>
           </li>
         ))}
       </ul>

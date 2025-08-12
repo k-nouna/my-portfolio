@@ -1,13 +1,60 @@
 import React from 'react'
+import { FaBrain, FaRobot, FaMobile, FaCode } from 'react-icons/fa'
+
+const services = [
+  {
+    icon: <FaBrain className="text-4xl text-[#2a9df4ff]" />,
+    title: "Machine Learning",
+    description: "Develop intelligent algorithms for data analysis, prediction, and pattern recognition using cutting-edge ML techniques."
+  },
+  {
+    icon: <FaRobot className="text-4xl text-[#2a9df4ff]" />,
+    title: "AI Solutions",
+    description: "Create custom AI applications including recommendation systems, sentiment analysis, and automated decision-making tools."
+  },
+  {
+    icon: <FaMobile className="text-4xl text-[#2a9df4ff]" />,
+    title: "AR/VR Development", 
+    description: "Build immersive augmented and virtual reality experiences for mobile and desktop platforms using Unity and C#."
+  },
+  {
+    icon: <FaCode className="text-4xl text-[#2a9df4ff]" />,
+    title: "Web Development",
+    description: "Design and develop modern, responsive web applications using React, Node.js, and other cutting-edge technologies."
+  }
+]
 
 function Services() {
   return (
-    <section className='n-services'>
-        <h1 className='text-black text-4xl font-extrabold'>My Services</h1>
-        <div className="n-card">
-            <img src="" alt="" srcset="" />
-            <h3>Data Science</h3>
-            <p>Lorem</p>
+    <section className='py-16 px-4 md:px-10 bg-white'>
+        <div className='max-w-7xl mx-auto'>
+            <div className='text-center mb-12 animate-fadeInUp'>
+                <span className='text-[#2a9df4ff] font-semibold text-sm uppercase tracking-wider mb-2 block'>Services</span>
+                <h1 className='text-gray-900 text-4xl md:text-5xl font-bold mb-4'>My Expertise</h1>
+                <p className='text-gray-600 text-lg max-w-2xl mx-auto'>
+                    Custom technological solutions to transform your ideas into digital reality.
+                </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fadeInUp">
+                {services.map((service, index) => (
+                  <div key={index} className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 text-center border border-gray-100 hover-lift">
+                    <div className="mb-6 flex justify-center">
+                      <div className="p-4 bg-[#2a9df4ff]/10 rounded-2xl group-hover:bg-[#2a9df4ff]/20 transition-all duration-300">
+                        {service.icon}
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold mb-4 text-gray-900 group-hover:text-[#2a9df4ff] transition-colors duration-300">
+                        {service.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                    
+                    <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="w-12 h-1 bg-gradient-to-r from-[#2a9df4ff] to-[#1e7bb8] rounded-full mx-auto"></div>
+                    </div>
+                  </div>
+                ))}
+            </div>
         </div>
     </section>
   )
