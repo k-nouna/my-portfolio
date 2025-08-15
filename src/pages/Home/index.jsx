@@ -62,7 +62,7 @@ function Home() {
             <div className='flex justify-center mb-8 sm:mb-12'>
               <a 
                 href={personalInfo.cvPath}
-                download="Lionel_Kambdetey_Resume.pdf"
+                download="lionel_cv.pdf"
                 className='w-full sm:w-auto text-[#2a9df4ff] hover:text-white border border-[#2a9df4ff] hover:bg-[#2a9df4ff] font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 max-w-xs'
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
