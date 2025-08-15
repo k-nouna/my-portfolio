@@ -19,27 +19,27 @@ function Intro() {
       };
     }, []);
   return (
-    <div className="container flex flex-col items-center justify-center h-full text-center px-4">
-      <div className="animate-fadeInUp">
-        <h1 className='font-extrabold text-4xl md:text-6xl text-white mb-4 drop-shadow-2xl' style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8)'}}>
+    <div className="container flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
+      <div className="animate-fadeInUp max-w-4xl mx-auto">
+        <h1 className='font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 drop-shadow-2xl leading-tight' style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8)'}}>
           Hello! 👋
         </h1>
-        <h2 className='text-2xl md:text-4xl font-bold text-white mb-6 drop-shadow-xl' style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7)'}}>
+        <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 drop-shadow-xl leading-tight' style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7)'}}>
           I'm <span ref={el} className="text-[#2a9df4ff] drop-shadow-lg"></span>
         </h2>
-        <p className='text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg font-medium' style={{textShadow: '1px 1px 4px rgba(0,0,0,0.8)'}}>
+        <p className='text-base sm:text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-lg font-medium leading-relaxed' style={{textShadow: '1px 1px 4px rgba(0,0,0,0.8)'}}>
           {personalInfo.title}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a 
             href="#about-me" 
-            className="bg-[#2a9df4ff] hover:bg-[#1e7bb8] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover-lift shadow-2xl"
+            className="w-full sm:w-auto bg-[#2a9df4ff] hover:bg-[#1e7bb8] text-white font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 hover-lift shadow-2xl text-center"
           >
             Discover My Profile
           </a>
           <a 
             href="#my-works" 
-            className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 px-8 rounded-full transition-all duration-300 backdrop-blur-sm bg-white/10"
+            className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 px-6 sm:px-8 rounded-full transition-all duration-300 backdrop-blur-sm bg-white/10 text-center"
           >
             View My Projects
           </a>

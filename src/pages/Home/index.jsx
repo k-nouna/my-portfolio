@@ -15,6 +15,7 @@ function Home() {
     picture: project.image,
     domains: project.category,
     description: project.description,
+    githubUrl: project.github,
     technologies: project.technologies.map(tech => ({
       name: tech.name,
       picture: tech.icon,
@@ -30,21 +31,21 @@ function Home() {
         <RecentWorks works={workData}/>
         <Services/>
       </main>
-      <section id="contact-me" className='py-16 px-4 md:px-10 bg-gradient-to-br from-gray-900 to-gray-800'>
+      <section id="contact-me" className='py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-br from-gray-900 to-gray-800'>
         <div className='max-w-4xl mx-auto text-center'>
           <div className='animate-fadeInUp'>
             <span className='text-[#2a9df4ff] font-semibold text-sm uppercase tracking-wider mb-2 block'>Contact</span>
-            <h2 className='text-white text-4xl md:text-5xl font-bold mb-6'>
+            <h2 className='text-white text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight'>
               Let's Work Together
             </h2>
-            <p className='text-gray-300 text-lg mb-8 max-w-2xl mx-auto'>
+            <p className='text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed'>
               Have a project in mind? Let's discuss how I can help bring it to life.
             </p>
             
-            <div className='flex flex-col sm:flex-row gap-6 justify-center mb-8'>
+            <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-8'>
               <a 
                 href={`mailto:${personalInfo.socialLinks.email}`}
-                className='bg-[#2a9df4ff] hover:bg-[#1e7bb8] text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover-lift'
+                className='w-full sm:w-auto bg-[#2a9df4ff] hover:bg-[#1e7bb8] text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 hover-lift text-center'
               >
                 📧 Send Email
               </a>
@@ -52,22 +53,22 @@ function Home() {
                 href={personalInfo.socialLinks.linkedin} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className='border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-4 px-8 rounded-full transition-all duration-300'
+                className='w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 text-center'
               >
                 💼 LinkedIn
               </a>
             </div>
             
-            <div className='flex justify-center mb-12'>
+            <div className='flex justify-center mb-8 sm:mb-12'>
               <a 
                 href={personalInfo.cvPath}
                 download="Lionel_Kambdetey_Resume.pdf"
-                className='text-[#2a9df4ff] hover:text-white border border-[#2a9df4ff] hover:bg-[#2a9df4ff] font-medium py-2 px-6 rounded-full transition-all duration-300 inline-flex items-center gap-2'
+                className='w-full sm:w-auto text-[#2a9df4ff] hover:text-white border border-[#2a9df4ff] hover:bg-[#2a9df4ff] font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-full transition-all duration-300 inline-flex items-center justify-center gap-2 max-w-xs'
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                Download My Resume
+                <span className="text-sm sm:text-base">Download My Resume</span>
               </a>
             </div>
             

@@ -7,10 +7,10 @@ import Intro  from '../Intro'
 
 function Banner() {
   return (
-        <div className="w-full
-                        h-[300px]
-                        md:h-screen
-                        max-h-[500px]
+        <div id="home" className="w-full
+                        h-[100vh]
+                        min-h-[500px]
+                        max-h-[800px]
                         
                         overflow-hidden
                         block

@@ -1,16 +1,16 @@
 {
   "personalInfo": {
     "name": "KAMBDETEY Lionel",
-    "title": "AI Engineer - Entrepreneur",
+    "title": "AI Engineer",
     "bio": "Artificial Intelligence and Computer Vision Engineer, passionate about creating innovative technological solutions that combine performance with real-world utility. My journey has led me to develop advanced video analysis systems, multi-camera tracking, and self-trainable document recognition (OCR), as well as high-impact mobile and web applications. Driven by curiosity and the desire to learn, I continuously explore AI, AR, and full-stack development, with a vision focused on entrepreneurship and scientific research. My goal: to design technologies that improve daily life and inspire the future.",
     "profileImage": "/src/assets/nouna.jpg",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/in/lionel-kambdetey",
+      "linkedin": "https://www.linkedin.com/in/kambdeteylionel/",
       "github": "https://github.com/k-nouna",
       "twitter": "https://twitter.com/lionel_kambdetey",
-      "email": "lionel.kambdetey@email.com"
+      "email": "kambdeteylionel@gmail.com"
     },
-    "cvPath": "/Lionel_Kambdetey_CV.pdf"
+    "cvPath": "/lionel_cv.pdf"
   },
   "projects": [
     {
@@ -24,7 +24,7 @@
         {"name": "ARCore", "icon": ""}
       ],
       "image": "",
-      "github": "",
+      "github": "https://github.com/k-nouna/ar_measure_app",
       "demo": "",
       "featured": true
     },
@@ -40,7 +40,7 @@
         {"name": "NLTK", "icon": ""}
       ],
       "image": "",
-      "github": "",
+      "github": "https://github.com/k-nouna/senso-ML",
       "demo": "",
       "featured": true
     },
@@ -62,7 +62,7 @@
     },
     {
       "id": 4,
-      "title": "E-Commerce Analytics Dashboard",
+      "title": "Intelligent Natural Language Query System for Medical Databases with Decision-Support Visualizations",
       "category": ["Data Visualization", "Web Development"],
       "description": "Comprehensive analytics dashboard for e-commerce businesses. Features real-time sales tracking, customer behavior analysis, and predictive analytics for inventory management.",
       "technologies": [
@@ -72,7 +72,7 @@
         {"name": "MongoDB", "icon": ""}
       ],
       "image": "",
-      "github": "",
+      "github": "https://github.com/k-nouna/dme-analytics-webapp",
       "demo": "",
       "featured": true
     },
@@ -95,24 +95,24 @@
   ],
   "services": [
     {
-      "title": "Machine Learning",
-      "description": "Develop intelligent algorithms for data analysis, prediction, and pattern recognition using cutting-edge ML techniques.",
+      "title": "Computer Vision & AI",
+      "description": "Advanced video analysis systems, multi-camera tracking, and self-trainable document recognition (OCR) using deep learning techniques.",
       "icon": "brain"
     },
     {
-      "title": "AI Solutions",
-      "description": "Create custom AI applications including recommendation systems, sentiment analysis, and automated decision-making tools.",
-      "icon": "robot"
-    },
-    {
-      "title": "AR/VR Development",
-      "description": "Build immersive augmented and virtual reality experiences for mobile and desktop platforms using Unity and C#.",
+      "title": "Mobile Development",
+      "description": "Cross-platform mobile applications with AR capabilities, real-time processing, and innovative user experiences using Unity and native frameworks.",
       "icon": "mobile"
     },
     {
       "title": "Web Development",
-      "description": "Design and develop modern, responsive web applications using React, Node.js, and other cutting-edge technologies.",
+      "description": "Full-stack web applications with React, Node.js, and modern frameworks. Specialized in data visualization and analytics dashboards.",
       "icon": "code"
+    },
+    {
+      "title": "Machine Learning Solutions",
+      "description": "Custom ML models for natural language processing, sentiment analysis, recommendation systems, and predictive analytics.",
+      "icon": "robot"
     }
   ]
 }

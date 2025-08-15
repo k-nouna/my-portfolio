@@ -47,14 +47,15 @@ function RecentWorks({works}) {
           </p>
         </div>
         
-        <div className='mx-4 my-8 slider-container animate-fadeInUp'>
+        <div className='mx-2 sm:mx-4 my-6 sm:my-8 slider-container animate-fadeInUp'>
           <Slider {...settings}>
               {works.map((work,index)=>(
-                <Card key ={`${work.name}-${index}`}
+                <Card key ={`${work.topic}-${index}`}
                       topic ={work.topic}
                       technologies={work.technologies}
                       domains={work.domains}
-                      description={work.description}/>
+                      description={work.description}
+                      githubUrl={work.githubUrl}/>
               ))}
             </Slider>
           </div>
