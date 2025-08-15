@@ -2,12 +2,12 @@ import AboutMe from '../../components/AboutMe';
 import Banner from '../../components/Banner';
 import Header from '../../components/Header';
 import RecentWorks from '../../components/RecentWorks';
-import Services from '../../components/Services';
+import Expertises from '../../components/Expertises';
 import portfolioData from '../../data/portfolio.json';
 import './Home.css';
 
 function Home() {
-  const { projects, personalInfo } = portfolioData;
+  const { projects, personalInfo, services } = portfolioData;
   
   // Transform projects data to match existing component structure
   const workData = projects.map(project => ({
@@ -29,7 +29,7 @@ function Home() {
       <main>
         <AboutMe/>
         <RecentWorks works={workData}/>
-        <Services/>
+        <Expertises services={services}/>
       </main>
       <section id="contact-me" className='py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-br from-gray-900 to-gray-800'>
         <div className='max-w-4xl mx-auto text-center'>
